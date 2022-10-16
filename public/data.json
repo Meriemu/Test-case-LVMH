@@ -1,0 +1,70 @@
+{
+   "lvmh": {
+      "sliders": [
+         {
+            "id": 1,
+            "progressBar": {
+               "nb1": "01",
+               "nb2": "07",
+               "text": "Inspirationd"
+            },
+            "title": "1",
+            "img": "https://wallpapercave.com/wp/wp8671030.jpg",
+            "slider": [
+               {
+                  "type": "Woman"
+               },
+               {
+                  "type": "Mixte"
+               }, 
+               {
+                  "type": "Man"
+               } 
+            ]
+         },
+         {
+            "id": 2,
+            "progressBar": {
+               "nb1": "01",
+               "nb2": "07",
+               "text": "Inspirationd"
+            },
+            "title": "2",
+            "img": "https://images7.alphacoders.com/401/401837.jpg",
+            "theme": "liddght",
+            "slider": [
+               {
+                  "type": "Frensh"
+               },
+               {
+                  "type": "Spicy"
+               }, 
+               {
+                  "type": "Floral"
+               } 
+            ]
+         },
+         {
+            "id": 3,
+            "progressBar": {
+               "nb1": "01",
+               "nb2": "07",
+               "text": "Inspirationd"
+            },
+            "title": "For what colorful inspiration ?",
+            "img": "https://images2.alphacoders.com/510/510702.jpg",
+            "slider": [
+               {
+                  "type": "Purple"
+               },
+               {
+                  "type": "Blue"
+               }, 
+               {
+                  "type": "Green"
+               } 
+            ]
+         }
+      ]
+   }
+}
