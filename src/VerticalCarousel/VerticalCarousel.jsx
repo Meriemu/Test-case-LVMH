@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
-import { ReactComponent as Next } from "../assets/chevronDown.svg";
-import { ReactComponent as Prev } from "../assets/chevronUp.svg";
-import "./carousel.scss";
+import { ReactComponent as Next } from "../assets/icons/chevronDown.svg";
+import { ReactComponent as Prev } from "../assets/icons/chevronUp.svg";
+import "./VerticalCarousel.scss";
 
 /*
  * Read the blog post here:
@@ -17,7 +17,7 @@ const VerticalCarousel = ({ data, clickActionTransfer }) => {
 	const halfwayIndex = Math.ceil(data.length / 2);
 
 	// Usd to determine the height/spacing of each item
-	const itemHeight = 52;
+	const itemHeight = 70;
 
 	// Used to determine at what point an item is moved from the top to the bottom
 	const shuffleThreshold = halfwayIndex * itemHeight;
@@ -76,7 +76,7 @@ const VerticalCarousel = ({ data, clickActionTransfer }) => {
 				<Prev />
 			</button>
 
-			<div className="slides">
+			<div className="carousel">
 				<div className="carousel-points">
 					{
 						Array.apply(null, { length: 3 }).map((e, i) => (
@@ -91,7 +91,7 @@ const VerticalCarousel = ({ data, clickActionTransfer }) => {
 						<button
 							data-glitch={item.type}
 							type="button"
-							onClick={clickActionTransfer}
+							onClick={()=>{clickActionTransfer(item.type)}}
 							className={cn("carousel-item", {
 								active: activeIndex === i,
 								visible:

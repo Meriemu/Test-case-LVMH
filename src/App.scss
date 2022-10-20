@@ -1,20 +1,86 @@
- body {
+body {
   overflow: hidden;
- }
-.slider {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  // flex-direction: column;
+  font-family: "BauerBodoni";
+}
+
+@font-face {
+  font-family: "BauerBodoni";
+  src: local("BauerBodoni"),
+    url("../src/assets/fonts/BauerBodoni/BauerBodoniStd-Bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+//Changing color text according to the theme
+.dark-theme {
+  * {
+    color: #fff;
+  }
+}
+
+// Last child: changing color when click
+.bg-color {
+  img:last-of-type {
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.bg-Green {
+    img:last-of-type {
+      filter: opacity(0.4) drop-shadow(0 0 0 green);
+    }
+  }
+  &.bg-Purple {
+    img:last-of-type {
+      filter: opacity(0.4) drop-shadow(0 0 0 purple);
+    }
+  }
+  &.bg-Blue {
+    img:last-of-type {
+      filter: opacity(0.4) drop-shadow(0 0 0 blue);
+    }
+  }
+}
+
+h1 {
+  position: relative;
+  left: 138px;
+  width: 40%;
   height: 100vh;
-  background: #FFF;
-  color: #ffffff;
+  flex-shrink: 0;
+  flex-grow: 1;
+  font-size: 85px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.slider {
+  height: 100vh;
+  background: #fff;
+  color: #53545c;
 }
 
-.ifSlider  { 
-  background: transparent; 
-}
+// Button to back to the prev item
+.slider__btn--back {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  background-color: transparent;
+  border: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  padding: 0;
 
+  &:hover {
+    transform: translateY(100%) rotate(360deg) !important;
+    transition: all .5s linear!important;
+  }
+}
 
 .slider__container {
   height: 100%;
@@ -30,30 +96,19 @@
     transform: translateX(0);
     transition: transform 3s;
     left: 0;
-    // &.hideBg {
-    //   animation: hideBg 4s 1s forwards;
-    //   -webkit-animation: hideBg 4s 1s forwards;
-    // }
-        
-    // @keyframes hideBg {
-    //     0% { transform: translateX(0%); }
-    //     100% { transform: translateX(100%); }
-    // }
-    
-    // @-webkit-keyframes hideBg {
-    //     0% { -webkit-transform: translateX(0%); }
-    //     100% { -webkit-transform: translateX(100%); }
-    // }
-    
+
     &.hideBg {
       transform: translateX(-100vw);
       transition: transform 3s;
     }
   }
-  img.slider__bg---- {
+
+  img.slider__bgImg {
     width: 100%;
+    height: 100vh;
     flex-shrink: 0;
     flex-grow: 1;
+    object-fit: cover;
   }
   img.slider__bg {
     @extend .mybg;
@@ -68,38 +123,6 @@
       transform: translateX(100vw);
       transition: transform 1s;
     }
-
-    // transform: translateX(100%);
-    // -webkit-transform: translateX(100%);
-    // transition: transform .5s 1s;
-
-    // &.showBg {
-    //   animation: showBg 4s .1s forwards;
-    //   -webkit-animation: showBg 4s .1s forwards;
-    // }
- 
-    // &.hideBg {
-    //   animation: hideBg 4s 1s forwards;
-    //   -webkit-animation: hideBg 4s 1s forwards;
-    // }
-        
-    // @keyframes showBg {
-    //     100% { transform: translateX(0%); }
-    // }
-    
-    // @-webkit-keyframes showBg {
-    //     100% { -webkit-transform: translateX(0%); }
-    // }
-        
-    // @keyframes hideBg {
-    //     0% { transform: translateX(0%); }
-    //     100% { transform: translateX(100%); }
-    // }
-    
-    // @-webkit-keyframes hideBg {
-    //     0% { -webkit-transform: translateX(0%); }
-    //     100% { -webkit-transform: translateX(100%); }
-    // }
   }
 }
 
@@ -108,45 +131,52 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-
-
   position: absolute;
-    top: 0;
+  top: 0;
 }
 
 .slider__left {
   position: relative;
   width: 60%;
-  padding: 0 4rem 0 12rem;
-  color: #53545C;
+  color: #53545c;
 
   h1 {
     font-size: 5.5rem;
-    // transform: translateY(0);
-    // transition: transform 1s;
-
     &.showTitle {
       transform: translateY(0%);
-      transition: transform .5s;
+      transition: transform 0.5s;
     }
     &.hideTitle {
       transform: translateY(-100vh);
-      transition: transform .5s;
+      transition: transform 0.5s;
     }
   }
 
   .slider__progressBar {
     position: absolute;
-    left: 2rem;
+    left: -46px;
     top: 50%;
-    height: max-content;
     bottom: 0;
-    transform: translateY(-50%) rotate(-90deg);
+    height: max-content;
     font-size: 1.2rem;
+    padding: 20px 0;
     border-bottom: 1px solid #a0968e;
-    padding: 0.8rem 0;
-
-    .slider__progressBar-lightTxt {
+    transform: translateY(-50%) rotate(-90deg);
+    z-index: 99;
+    
+    &::after {
+      content: "";
+      display: block;
+      width: var(--progressBar-width);
+      height: 1px;
+      position: absolute;
+      bottom: -1px;
+      right: var(--progressBar-right);
+      background: #FFF;
+      transition: all 3s ease 4s;
+      // transition: var(--progressBar-transition);
+    }
+    .slider__progressBar-lighterTxt {
       color: #a0968e;
     }
   }
@@ -154,33 +184,26 @@
 .slider__right {
   width: 40%;
   transform: translateX(0);
-  transition: transform .5s;
+  transition: transform 0.5s;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-
+  z-index: 2;
   &.showCarousel {
     transform: translateX(0);
-    transition: transform .5s;
+    transition: transform 0.5s;
   }
   &.hideCarousel {
     transform: translateX(100%);
-    transition: transform .5s;
+    transition: transform 0.5s;
   }
 
-  &.light-theme {
+  &.dark-theme {
     .carousel-item:hover {
       span {
         &::before {
-          background-color: #FFF;
+          background-color: #fff;
         }
       }
     }
-  }
-}
-//Cahnging color text according to the theme 
-
-.light-theme {
-  * {
-    color: #FFF;
   }
 }
