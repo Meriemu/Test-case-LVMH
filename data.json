@@ -8,7 +8,7 @@
                "nb2": "07",
                "text": "Inspirationd"
             },
-            "title": "1- Are you looking for a perfume",
+            "title": "Are you looking for a perfume",
             "img": "https://images3.alphacoders.com/231/231257.jpg",
             "theme": "dark",
             "slider": [
@@ -30,7 +30,7 @@
                "nb2": "08",
                "text": "Inspirationd"
             },
-            "title": "2- Do you have a preference for certain notes ?",
+            "title": "Do you have a preference for certain notes ?",
             "img": "https://images7.alphacoders.com/838/838440.png",
             "theme": "dark",
             "slider": [
@@ -52,30 +52,8 @@
                "nb2": "09",
                "text": "Inspirationd"
             },
-            "title": "3- For what colorful inspiration ?",
+            "title": "For what colorful inspiration ?",
             "img": "https://images6.alphacoders.com/705/705619.png",
-            "slider": [
-               {
-                  "type": "Purple"
-               },
-               {
-                  "type": "Blue"
-               }, 
-               {
-                  "type": "Green"
-               } 
-            ]
-         },
-         {
-            "id": 4,
-            "progressBar": {
-               "nb1": "01",
-               "nb2": "10",
-               "text": "Inspirationd"
-            },
-            "title": "4- World of Warcraft - Alliance symbol",
-            "img": "https://images7.alphacoders.com/298/298770.jpg",
-            "theme": "dark",
             "slider": [
                {
                   "type": "Purple"
