@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Test-case-LVMH/static/css/main.60777e01.css",
-    "main.js": "/Test-case-LVMH/static/js/main.7870610d.js",
+    "main.js": "/Test-case-LVMH/static/js/main.4eeacbb4.js",
     "static/media/BauerBodoniStd-Bold.otf": "/Test-case-LVMH/static/media/BauerBodoniStd-Bold.970f931d86f177b96d84.otf",
     "static/media/chevronDown.svg": "/Test-case-LVMH/static/media/chevronDown.a131c8a838c7d9595d12069f169bf837.svg",
     "static/media/chevronUp.svg": "/Test-case-LVMH/static/media/chevronUp.4e989687b203405f2f33dbbcf35646ff.svg",
     "index.html": "/Test-case-LVMH/index.html",
     "main.60777e01.css.map": "/Test-case-LVMH/static/css/main.60777e01.css.map",
-    "main.7870610d.js.map": "/Test-case-LVMH/static/js/main.7870610d.js.map"
+    "main.4eeacbb4.js.map": "/Test-case-LVMH/static/js/main.4eeacbb4.js.map"
   },
   "entrypoints": [
     "static/css/main.60777e01.css",
-    "static/js/main.7870610d.js"
+    "static/js/main.4eeacbb4.js"
   ]
 }
