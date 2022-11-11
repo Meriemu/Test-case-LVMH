@@ -6,10 +6,10 @@
             "progressBar": {
                "nb1": "01",
                "nb2": "07",
-               "text": "Inspirationd"
+               "text": "Inspiration"
             },
-            "title": "1- Are you looking for a perfume",
-            "img": "https://images3.alphacoders.com/231/231257.jpg",
+            "title": "Are you looking for a perfume",
+            "img": "https://images6.alphacoders.com/705/705619.png",
             "theme": "dark",
             "slider": [
                {
@@ -30,8 +30,8 @@
                "nb2": "08",
                "text": "Inspirationd"
             },
-            "title": "2- Do you have a preference for certain notes ?",
-            "img": "https://images7.alphacoders.com/838/838440.png",
+            "title": "Do you have a preference for certain notes ?",
+            "img": "https://wallup.net/wp-content/uploads/2016/04/10/284363-fantasy_art-forest.jpg",
             "theme": "dark",
             "slider": [
                {
@@ -52,30 +52,8 @@
                "nb2": "09",
                "text": "Inspirationd"
             },
-            "title": "3- For what colorful inspiration ?",
-            "img": "https://images6.alphacoders.com/705/705619.png",
-            "slider": [
-               {
-                  "type": "Purple"
-               },
-               {
-                  "type": "Blue"
-               }, 
-               {
-                  "type": "Green"
-               } 
-            ]
-         },
-         {
-            "id": 4,
-            "progressBar": {
-               "nb1": "01",
-               "nb2": "10",
-               "text": "Inspirationd"
-            },
-            "title": "4- World of Warcraft - Alliance symbol",
-            "img": "https://images7.alphacoders.com/298/298770.jpg",
-            "theme": "dark",
+            "title": "For what colorful inspiration ?",
+            "img": "https://img.freepik.com/photos-gratuite/fond-couleur-holi-fond-blanc_24972-874.jpg?w=1380&t=st=1666598136~exp=1666598736~hmac=38e281d67061d6b5bb88cdf70667b4be84b210003ff6e1c2a278ef9014bcb86d",
             "slider": [
                {
                   "type": "Purple"
