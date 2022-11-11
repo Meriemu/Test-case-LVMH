@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TestCaseLvmh/static/css/main.ec388d0d.css",
+    "main.css": "/TestCaseLvmh/static/css/main.e902ed6d.css",
     "main.js": "/TestCaseLvmh/static/js/main.5d33924c.js",
     "static/media/BauerBodoniStd-Bold.otf": "/TestCaseLvmh/static/media/BauerBodoniStd-Bold.970f931d86f177b96d84.otf",
-    "static/media/chevronDown.svg": "/TestCaseLvmh/static/media/chevronDown.a131c8a838c7d9595d12069f169bf837.svg",
-    "static/media/chevronUp.svg": "/TestCaseLvmh/static/media/chevronUp.4e989687b203405f2f33dbbcf35646ff.svg",
+    "static/media/chevronDown.svg": "/TestCaseLvmh/static/media/chevronDown.fcff8d196847be1045415458a6cc03e2.svg",
+    "static/media/chevronUp.svg": "/TestCaseLvmh/static/media/chevronUp.b84ff639f6e91bcb9806ab6d4d38d15c.svg",
     "index.html": "/TestCaseLvmh/index.html",
-    "main.ec388d0d.css.map": "/TestCaseLvmh/static/css/main.ec388d0d.css.map",
+    "main.e902ed6d.css.map": "/TestCaseLvmh/static/css/main.e902ed6d.css.map",
     "main.5d33924c.js.map": "/TestCaseLvmh/static/js/main.5d33924c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec388d0d.css",
+    "static/css/main.e902ed6d.css",
     "static/js/main.5d33924c.js"
   ]
 }
