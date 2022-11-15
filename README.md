@@ -3,6 +3,11 @@
 - Text from the model
 - Almost perfect pixel
 -->
+
+### Published on github pages :
+ https://meriemu.github.io/Tabs-Reactjs/
+ 
+ 
 # Getting Started with Create React App -  install npm
 
 ### `npm i`
