@@ -75,10 +75,11 @@ h1 {
   align-items: center;
   z-index: 999;
   padding: 0;
+  cursor: pointer;
 
   &:hover {
-    transform: translateY(100%) rotate(360deg) !important;
-    transition: all .5s linear!important;
+    transform: translateY(100%) scale(1.2) !important;
+    transition: all .5s !important;
   }
 }
 
@@ -197,11 +198,14 @@ h1 {
     transition: transform 0.5s;
   }
 
-  &.dark-theme {
+  &.dark-theme .carousel-wrapper {
+    .carousel-button svg {
+      fill: #FFF;
+    }
     .carousel-item:hover {
       span {
         &::before {
-          background-color: #fff;
+          background-color: #FFF;
         }
       }
     }
