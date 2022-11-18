@@ -71,7 +71,7 @@ const VerticalCarousel = ({ data, clickActionTransfer }) => {
 			<button
 				type="button"
 				className="carousel-button prev"
-				// onClick={() => handleClick("prev")}
+				onClick={() => handleClick("prev")}
 			>
 				<Prev />
 			</button>
@@ -112,7 +112,7 @@ const VerticalCarousel = ({ data, clickActionTransfer }) => {
 			<button
 				type="button"
 				className="carousel-button next"
-				// onClick={() => handleClick("next")}
+				onClick={() => handleClick("next")}
 			>
 				<Next />
 			</button>
