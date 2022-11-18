@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/TestCaseLvmh/static/css/main.71c076e7.css",
-    "main.js": "/TestCaseLvmh/static/js/main.a20979db.js",
+    "main.js": "/TestCaseLvmh/static/js/main.5d33924c.js",
     "static/media/BauerBodoniStd-Bold.otf": "/TestCaseLvmh/static/media/BauerBodoniStd-Bold.970f931d86f177b96d84.otf",
     "static/media/chevronDown.svg": "/TestCaseLvmh/static/media/chevronDown.fcff8d196847be1045415458a6cc03e2.svg",
     "static/media/chevronUp.svg": "/TestCaseLvmh/static/media/chevronUp.b84ff639f6e91bcb9806ab6d4d38d15c.svg",
     "index.html": "/TestCaseLvmh/index.html",
     "main.71c076e7.css.map": "/TestCaseLvmh/static/css/main.71c076e7.css.map",
-    "main.a20979db.js.map": "/TestCaseLvmh/static/js/main.a20979db.js.map"
+    "main.5d33924c.js.map": "/TestCaseLvmh/static/js/main.5d33924c.js.map"
   },
   "entrypoints": [
     "static/css/main.71c076e7.css",
-    "static/js/main.a20979db.js"
+    "static/js/main.5d33924c.js"
   ]
 }
